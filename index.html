@@ -10,12 +10,12 @@
     <header>
       <h1>Git Commands</h1>
     </header>
-    <section>
+    <section class="desc">
       <title>Description</title>
       It is a distributed version controll system to co-ordinate between many
       developers.
     </section>
-    <section>
+    <section class="table-sec">
       <title>Commads</title>
       <table>
         <tr>
@@ -150,6 +150,24 @@
         <tr>
           <td>git reset --hard HEAD</td>
           <td>It will discard all changes in files since the last commit</td>
+        </tr>
+        <tr>
+          <td>git stash -u</td>
+          <td>
+            put the uncommited changes to some different place and clean the
+            working directory
+          </td>
+        </tr>
+        <tr>
+          <td>git rebase</td>
+          <td>
+            takes a set of commits, copies them and stores them outside of
+            repository
+          </td>
+        </tr>
+        <tr>
+          <td>git revert 'hash of the commit'</td>
+          <td>take back to the previous or specific version of files</td>
         </tr>
       </table>
     </section>
