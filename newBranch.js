@@ -1,1 +1,1 @@
-alert("Hello from new branch");
+Console.log("Hello from new branch");
