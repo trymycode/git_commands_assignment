@@ -3,3 +3,17 @@ body {
   text-align: center;
   color: #738290;
 }
+h3 {
+  color: #81a3c5;
+  font-size: 1.6rem;
+}
+a {
+  text-decoration: none;
+  color: #81a3c5;
+  font-size: 1rem;
+}
+a:hover {
+  font-size: 2rem;
+  color: #6ba085;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
