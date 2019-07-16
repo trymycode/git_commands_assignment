@@ -8,6 +8,8 @@ body {
   margin-bottom: 2em;
 }
 
-table, tr, td {
+table,
+tr,
+td {
   border: 1px solid black;
 }
