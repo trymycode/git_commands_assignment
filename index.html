@@ -17,6 +17,52 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Dropdown link
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <div class="container">
       <div class="jumbotron">
         <h1 class="display-4 text-secondary">
@@ -24,18 +70,26 @@
           Commands
         </h1>
         <p class="lead">
-          GIT - It is a distributed version controll system to co-ordinate
+          GIT - It is a distributed version control system to co-ordinate
           between many developers.
         </p>
         <hr class="my-4" />
       </div>
       <div>
         <section>
-          <title>Commads</title>
+          <title>Commands</title>
           <table>
             <tr>
               <th>Commands</th>
               <th>Use</th>
+            </tr>
+            <tr>
+              <td>git config --global user.name 'full name'</td>
+              <td>setting name to git configuration</td>
+            </tr>
+            <tr>
+              <td>git config --global user.email 'email id'</td>
+              <td>setting email to git configuration</td>
             </tr>
             <tr>
               <td>git init</td>
@@ -61,6 +115,14 @@
                 It will add the changes of all changed file to the staging area
                 and it will ready the changes for commit
               </td>
+            </tr>
+            <tr>
+              <td>git rm --cached 'filename.extension'</td>
+              <td>to remove the file from staging area</td>
+            </tr>
+            <tr>
+              <td>git add *.'extension'</td>
+              <td>add all .extension files to staging area</td>
             </tr>
             <tr>
               <td>git commit</td>
@@ -105,18 +167,26 @@
               </td>
             </tr>
             <tr>
-              <td>git checkout branchname</td>
+              <td>git checkout 'branch name'</td>
               <td>
                 By using this command you can shift from one branch to another
                 of a project
               </td>
             </tr>
             <tr>
-              <td>git branch newbranchname</td>
+              <td>git branch 'new branch name'</td>
               <td>By using this command you can create a new branch</td>
             </tr>
             <tr>
-              <td>git merge branchname</td>
+              <td>git branch -d 'branch name'</td>
+              <td>deletes the branch if all the changes are merged master</td>
+            </tr>
+            <tr>
+              <td>git branch -D 'branch name'</td>
+              <td>deletes the branch forcefully</td>
+            </tr>
+            <tr>
+              <td>git merge 'branch name'</td>
               <td>
                 By using this command you can merge the different branch codes
               </td>
