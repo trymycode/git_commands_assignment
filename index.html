@@ -1,119 +1,166 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Title of the document</title>
-<link rel="stylesheet" type="text/css" href="style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title of the document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-            <h1>Git Commands</h1>
+      <h1>Git Commands</h1>
     </header>
     <section>
-        <title>Description</title>
-        It is a distributed version controll system to co-ordinate between many developers.
+      <title>Description</title>
+      It is a distributed version controll system to co-ordinate between many
+      developers.
     </section>
     <section>
-        <title>Commads</title>
-        <table>
-                <tr>
-                  <th>Commands</th>
-                  <th>Use</th>
-                </tr>
-                <tr>
-                  <td>git init</td>
-                  <td>Initialize local git repository in the folder creating .git folder.</td>
-                </tr>
-                 <tr>
-                    <td>git status</td>
-                    <td>Check status of working tree.</td>
-                 </tr>
-                 <tr>
-                    <td>git add filename </td>
-                    <td>It will add the file to the staging area and it will ready the changes for commit</td>
-                 </tr>
-                 <tr>
-                    <td>git add .filename </td>
-                    <td>It will add the changes of all changed file to the staging area and it will ready the changes for commit</td>
-                    </tr>
-                 <tr>
-                    <td>git commit </td>
-                    <td>It will commit the changes of the file to index and will push the changes to the local repository.</td>
-                </tr>
-                <tr>
-                    <td>git commit -a -m "commit message"</td>
-                    <td>It will commit the changes of all files to index  with a message and will push the changes to the local repository.</td>
-                 </tr>
-                <tr>
-                    <td>git push</td>
-                    <td>It will push the changes and the code from the local repository to remote repository</td>
-                </tr>
-                <tr>
-                    <td>git pull</td>
-                    <td>By using this command we can pull latest changes to our local repository from the remote repository.</td>
-                </tr>
-                <tr>
-                    <td>git clone </td>
-                    <td>By using git clone, we can clone a remote repository in to a new directory.</td>
-                </tr>
-                <tr>
-                    <td>git rm --cached <filename></td>
-                    <td>By this command you can remove(rm stands for remove) any file from your repository.</td>
-                </tr>
-                <tr>
-                    <td>git checkout branchname</td>
-                    <td>By using this command you can shift from one branch to another of a project</td>
-                </tr>
-                <tr>
-                    <td>git branch newbranchname</td>
-                    <td>By using this command you can create a new branch </td>
-                </tr>
-                <tr>
-                    <td>git merge branchname</td>
-                    <td>By using this command you can merge the different branch codes </td>
-                </tr>
-                <tr>
-                    <td>git log --all</td>
-                    <td>By using this command you can see all the 
-                        command details(command time, date, author name, changed file details)
-                    </td>
-                </tr>
-                <tr>
-                    <td>git log -number</td>
-                    <td>Example-> git log -2
-                        By using this command you can see the last 2 command details.
-                    </td>
-                </tr>
-                <tr>
-                    <td>git log --stat</td>
-                    <td>We can use this command to view summary of the changes made in each commit</td>
-                </tr>
-                <tr>
-                    <td>git log --oneline</td>
-                    <td>To just get the bare minimum information in a single line per commit, use the –oneline option</td>
-                </tr>
-               <tr>
-                   <td>git log --author=authorname</td>
-                   <td>Another common way to filter commits is by the person name who wrote or committed the changes. </td>
-               </tr>
-               <tr>
-                    <td>git log --committer=committername</td>
-                    <td>Another common way to filter commits is by the person name who committed the changes. </td>
-              </tr>
-              <tr>
-                  <td>git reset --hard HEAD</td>
-                  <td>It will discard all changes in files since the last commit</td>
-              </tr>
-              </table>
+      <title>Commads</title>
+      <table>
+        <tr>
+          <th>Commands</th>
+          <th>Use</th>
+        </tr>
+        <tr>
+          <td>git init</td>
+          <td>
+            Initialize local git repository in the folder creating .git folder.
+          </td>
+        </tr>
+        <tr>
+          <td>git status</td>
+          <td>Check status of working tree.</td>
+        </tr>
+        <tr>
+          <td>git add filename</td>
+          <td>
+            It will add the file to the staging area and it will ready the
+            changes for commit
+          </td>
+        </tr>
+        <tr>
+          <td>git add .filename</td>
+          <td>
+            It will add the changes of all changed file to the staging area and
+            it will ready the changes for commit
+          </td>
+        </tr>
+        <tr>
+          <td>git commit</td>
+          <td>
+            It will commit the changes of the file to index and will push the
+            changes to the local repository.
+          </td>
+        </tr>
+        <tr>
+          <td>git commit -a -m "commit message"</td>
+          <td>
+            It will commit the changes of all files to index with a message and
+            will push the changes to the local repository.
+          </td>
+        </tr>
+        <tr>
+          <td>git push</td>
+          <td>
+            It will push the changes and the code from the local repository to
+            remote repository
+          </td>
+        </tr>
+        <tr>
+          <td>git pull</td>
+          <td>
+            By using this command we can pull latest changes to our local
+            repository from the remote repository.
+          </td>
+        </tr>
+        <tr>
+          <td>git clone</td>
+          <td>
+            By using git clone, we can clone a remote repository in to a new
+            directory.
+          </td>
+        </tr>
+        <tr>
+          <td>git rm --cached 'filename'</td>
+          <td>
+            By this command you can remove(rm stands for remove) any file from
+            your repository.
+          </td>
+        </tr>
+        <tr>
+          <td>git checkout branchname</td>
+          <td>
+            By using this command you can shift from one branch to another of a
+            project
+          </td>
+        </tr>
+        <tr>
+          <td>git branch newbranchname</td>
+          <td>By using this command you can create a new branch</td>
+        </tr>
+        <tr>
+          <td>git merge branchname</td>
+          <td>
+            By using this command you can merge the different branch codes
+          </td>
+        </tr>
+        <tr>
+          <td>git log --all</td>
+          <td>
+            By using this command you can see all the command details(command
+            time, date, author name, changed file details)
+          </td>
+        </tr>
+        <tr>
+          <td>git log -number</td>
+          <td>
+            Example-> git log -2 By using this command you can see the last 2
+            command details.
+          </td>
+        </tr>
+        <tr>
+          <td>git log --stat</td>
+          <td>
+            We can use this command to view summary of the changes made in each
+            commit
+          </td>
+        </tr>
+        <tr>
+          <td>git log --oneline</td>
+          <td>
+            To just get the bare minimum information in a single line per
+            commit, use the –oneline option
+          </td>
+        </tr>
+        <tr>
+          <td>git log --author=authorname</td>
+          <td>
+            Another common way to filter commits is by the person name who wrote
+            or committed the changes.
+          </td>
+        </tr>
+        <tr>
+          <td>git log --committer=committername</td>
+          <td>
+            Another common way to filter commits is by the person name who
+            committed the changes.
+          </td>
+        </tr>
+        <tr>
+          <td>git reset --hard HEAD</td>
+          <td>It will discard all changes in files since the last commit</td>
+        </tr>
+      </table>
     </section>
-    <hr>
+    <hr />
     <section>
-        <h3> Git Ignore Files </h3>
-        <p> We can create .gitignore file and can include the name of the file which we don't want to add in git repository.</p>
+      <h3>Git Ignore Files</h3>
+      <p>
+        We can create .gitignore file and can include the name of the file which
+        we don't want to add in git repository.
+      </p>
     </section>
     <script type="text/javascript" src="newBranch.js"></script>
-    
-</body>
-
+  </body>
 </html>
